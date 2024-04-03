@@ -1,0 +1,12 @@
+## envs
+**/.env
+
+## docs
+**/TODO.md
+
+## tests
+**/coverage.html
+**/coverage.out
+
+## databases
+**/*.db

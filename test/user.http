@@ -1,0 +1,49 @@
+POST http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@gmail.com",
+  "password": "123456"
+}
+###
+
+
+
+POST http://localhost:8080/users/generate_token HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "john.doe@gmail.com",
+  "password": "123456"
+}
+###
+
+
+
+GET http://localhost:8080/users/7ccdc084-6c9a-4eff-935a-d651653385a2 HTTP/1.1
+Content-Type: application/json
+###
+
+
+
+GET http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+###
+
+
+
+PUT http://localhost:8080/users/7ccdc084-6c9a-4eff-935a-d651653385a2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Doe da Silva",
+  "email": "john.doe@gmail.com",
+  "password": "123456"
+}
+###
+
+
+
+DELETE http://localhost:8080/users/7ccdc084-6c9a-4eff-935a-d651653385a2 HTTP/1.1
+Content-Type: application/json
